@@ -1,12 +1,10 @@
 import random
 
 def get_word():
-    # List of words to choose from
     words = ["python", "hangman", "challenge", "programming", "computer", "science"]
     return random.choice(words)
 
 def display_word(word, guessed_letters):
-    # Create a display of the word with guessed letters and underscores for others
     return " ".join([letter if letter in guessed_letters else "_" for letter in word])
 
 def play_hangman():
